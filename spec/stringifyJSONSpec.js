@@ -13,6 +13,15 @@ describe("stringifyJSON", function(){
       var expected = JSON.stringify(obj);
       expect(result).toEqual(expected);
     });
-
   });
+});
+
+describe("stringifyJSON", function(){
+	it("should match JSON.stringify for extra credit strings", function(){
+	  extraCreditStrings.forEach(function(obj){
+	    var result = stringifyJSON(obj);
+	    var expected = JSON.stringify(obj);
+	    expect(result).toEqual(expected);
+	  });
+	});	
 });

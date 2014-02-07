@@ -105,3 +105,7 @@ var arrayWithInvalidStrings = [
   '["foo", "bar"',
   '["foo", "bar\\"]'
 ];
+
+// used for stringifyJSON spec
+var arrayWithValidElements = stringifiableValues;
+var objectWithInvalidAttributes = nonStringifiableValues;
